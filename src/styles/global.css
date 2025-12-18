@@ -1,2 +1,62 @@
 @import "tailwindcss";
 
+/*FONT FINGERPAINT  USADA EN LIBRO: SECRETOS*/
+@font-face {
+    font-family: "finger-paint";
+    src: url("/fonts/finger_paint/finger-paint-latin-400-normal.woff2") format("woff2");
+    font-weight: 400;
+    font-display: swap;
+}
+/*FONT MONTSERRAT USADA EN PAGINA PRINCIPAL INDEX.ASTRO (SOBRE AUTORA)*/
+@font-face {
+    font-family: "montserrat";
+    src: url("/fonts/montserrat/montserrat-latin-400-normal.woff2") format("woff2");
+    font-weight: 400;
+    font-display: swap;
+}
+@font-face {
+    font-family:"montserrat";
+    src: url("/fonts/montserrat/montserrat-latin-600-normal.woff2") format("woff2");
+    font-weight: 600;
+    font-display: swap;
+}
+@font-face {
+    font-family:"montserrat";
+    src: url("/fonts/montserrat/montserrat-latin-700-normal.woff2") format("woff2");
+    font-weight: 700;
+    font-display: swap;
+}
+/*FONT MERRIWEATHER USADA EN PAGINA PRINCIPAL INDEX.ASTRO (SOBRE AUTORA)*/
+
+@font-face {
+    font-family:"merriweather";
+    src: url("/fonts/merriweather/merriweather-latin-400-normal.woff2") format("woff2");
+    font-weight: 400;
+    font-display: swap;
+}
+@font-face {
+    font-family:"merriweather";
+    src: url("/fonts/merriweather/merriweather-latin-600-normal.woff2") format("woff2");
+    font-weight: 600;
+    font-display: swap;
+}
+@font-face {
+    font-family:"merriweather";
+    src: url("/fonts/merriweather/merriweather-latin-700-normal.woff2") format("woff2");
+    font-weight: 700;
+    font-display: swap;
+}
+
+
+@theme{
+    --font-finger:"finger-paint",  'system-ui', 'sans-serif';
+    --font-merriweather:"merriweather",  'system-ui', 'sans-serif';
+    --font-montserrat:"montserrat",  'system-ui', 'sans-serif';
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'montserrat',  'system-ui', 'sans-serif';
+}
+
