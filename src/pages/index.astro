@@ -1,11 +1,23 @@
 ---
 import Layout from "../layout/Layout.astro"
 import Header from "../components/structure/Header.astro"
+import ProfileImageCard from "../components/ui/ProfileImageCard.astro"
 ---
 
 <Layout>
 
     <Header/>
+    <section class="flex flex-col items-center justify-center lg:items-start  flex-wrap md:flex-row gap-20">
+        <ProfileImageCard/>
+        <p class=" font-montserrat text-[16px] font-normal pt-10  lg:pt-0 lg:ml-5 max-w-prose hyphens-auto text-justify [text-justify:inter-word] leading-relaxed text-pretty lg:text-[16px]  lg:px-0" >
+            <span class="font-semibold">Alejandra Morales</span> escritora salvadoreña y lectora apasionada que encontró en los libros un refugio. Su relación con la lectura comenzó a temprana edad, pero lo que realmente marco su infancia fue el impacto que tuvo el cine de terror en ella, especialmente el subgénero slasher, sembrando en ella una fascinación por el suspenso, el misterio y los secretos que se esconden detrás de una apariencia tranquila. <br><br> 
+            En 2021 comenzó a leer de manera activa en Wattpad, iniciándose con fanfics y relatos cortos de terror, hasta expandir sus intereses hacia thrillers, misterios y distintos tipos de romance, desde el más suave hasta el más oscuro. <br><br>
+            
+            Como escritora Secretos es su primer libro que representa el resultado de años de trabajo, constancia y evolución creativa, una historia que comenzó a tomar forma en 2022 y que pasó por múltiples reescrituras y cambios de trama.
+            
+            Con esta historia, Alejandra rinde homenaje a las historias que la inspiraron y que finalmente ve la luz tras un largo proceso.
+        </p>
+    </section>
 
 
     
