@@ -52,11 +52,14 @@
     --font-finger:"finger-paint",  'system-ui', 'sans-serif';
     --font-merriweather:"merriweather",  'system-ui', 'sans-serif';
     --font-montserrat:"montserrat",  'system-ui', 'sans-serif';
+    --color-texto:#2c3e90;
 }
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family:'montserrat',  'system-ui', 'sans-serif';
+
+
+body{
+    background: linear-gradient(135deg, #fce4ec 0%, #e1f5fe 50%, #f3e5f5 100%) no-repeat;
+    background-attachment: fixed;
+    
 }
+
 

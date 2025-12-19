@@ -1,0 +1,19 @@
+---
+const style_hover_link = `relative inline-block
+         after:absolute after:left-0 after:-bottom-0.5
+         after:h-px after:w-0
+         after:bg-current after:opacity-70
+         after:transition-all after:duration-200 after:ease-out
+         hover:after:w-full text-slate-400 flex ml-4 justify-end`
+---
+
+
+
+<nav class="flex justify-end items-center ">
+    <li class="flex gap-10 text-1xl font-montserrat text-texto flex-wrap hover:cursor-pointer">
+
+        <a class={style_hover_link} href="">Inicio</a>
+        <a class={style_hover_link} href="">Biografia</a>
+        <a class={style_hover_link} href="">Biblioteca</a>
+    </li>
+</nav>
