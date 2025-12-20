@@ -1,27 +1,41 @@
 ---
-interface Props {
-    title:string
-    autora:string
-    image:string
-    color:string
-}
-
-const {title, autora, image,color} = Astro.props;
+const { title, author, image, color, alt, color_title, font } = Astro.props;
+import {Image} from 'astro:assets'
 
 ---
-<article class="book-item flex items-end ...clases-tailwind-de-estructura...">
-   <!-- Contenido -->
+
+<article class="book-item group" style={`background-color:${color}`}>
+  <!-- LOMO -->
+  <div class="book-spine">
+      <div class="divider thick"></div>
+      <div class="w-full h-1 bg-black mb-4"></div>
+
+    <div class="divider thin mb-auto"></div>
+
+    <span class= "spine-text" style=`color:${color_title}; font-family:${font};`>{title}</span>
+
+    <div class="divider thin mt-auto"></div>
+    <div class="w-full h-1 bg-black mt-4"></div>
+    <div class="divider thick"></div>
+
+  </div>
+
+  <!-- PORTADA -->
+  <div
+    class="book-cover"
+    >
+    <Image 
+        src={image}
+        alt={alt}
+    />
+    <div class="cover-overlay"></div>
+
+    <div class="sticker w-fit">
+      <h3>{title}</h3>
+      <p>{author}</p>
+    </div>
+    
+  </div>
 </article>
 
-<style>
-  /* Aquí manejas la animación compleja limpiamente */
-  .book-item {
-    transition: width 0.5s cubic-bezier(0.25, 1, 0.5, 1);
-    /* Si fuera la versión 3D, aquí pondrías todo el transform-style, etc. */
-  }
 
-  .book-item:hover {
-     /* Lógica de animación específica */
-     width: 14rem; /* Equivalente a w-56 */
-  }
-</style>

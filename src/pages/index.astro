@@ -2,6 +2,7 @@
 import Layout from "../layout/Layout.astro";
 import ProfileImageCard from "../components/ui/ProfileImageCard.astro";
 import Label from "../components/ui/label_cartoon.astro";
+import BookRack from "../components/ui/book_rack.astro";
 ---
 
 
@@ -9,7 +10,7 @@ import Label from "../components/ui/label_cartoon.astro";
 
     <Label name_label="Biografia"/>
     
-    <section class="flex flex-col items-center justify-center lg:items-start  flex-wrap md:flex-row gap-20">
+    <section class="flex flex-col items-center justify-center lg:items-start  flex-wrap md:flex-row gap-20 mb-15">
         <ProfileImageCard/>
         <p class=" font-montserrat text-[16px] font-normal lg:pt-0 lg:ml-5 max-w-prose hyphens-auto text-justify [text-justify:inter-word] leading-relaxed lg:leading-8 text-pretty lg:text-[16px]  lg:px-0" >
             <span class="font-semibold">Alejandra Morales</span> escritora salvadoreña y lectora apasionada que encontró en los libros un refugio. Su relación con la lectura comenzó a temprana edad, pero lo que realmente marcó su infancia fue el impacto que tuvo el cine de terror en ella, especialmente el subgénero slasher, sembrando en ella una fascinación por el suspenso, el misterio y los secretos que se esconden detrás de una apariencia tranquila. <br><br> 
@@ -20,6 +21,12 @@ import Label from "../components/ui/label_cartoon.astro";
             Con esta historia, Alejandra rinde homenaje a las historias que la inspiraron y que finalmente ve la luz tras un largo proceso.
         </p>
     </section>
+
+    <BookRack>
+
+
+
+    </BookRack>
 
 
     
