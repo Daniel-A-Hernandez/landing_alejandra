@@ -1,0 +1,15 @@
+---
+import {Image} from 'astro:assets';
+import logo_wattpad from "/src/assets/wattpad-logo-1.svg"
+const {button_name, link_wattpad} = Astro.props;
+
+---
+
+<a href={link_wattpad} class="learn-more" target="_blank" rel="noopener noreferrer" >
+    <Image class="m-auto"
+     src={logo_wattpad} 
+     alt="logo de wattpad" 
+     width={120}
+     height={120}
+     />
+</a>
