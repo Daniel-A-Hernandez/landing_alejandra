@@ -1,0 +1,27 @@
+---
+interface Props {
+    title:string
+    autora:string
+    image:string
+    color:string
+}
+
+const {title, autora, image,color} = Astro.props;
+
+---
+<article class="book-item flex items-end ...clases-tailwind-de-estructura...">
+   <!-- Contenido -->
+</article>
+
+<style>
+  /* Aquí manejas la animación compleja limpiamente */
+  .book-item {
+    transition: width 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+    /* Si fuera la versión 3D, aquí pondrías todo el transform-style, etc. */
+  }
+
+  .book-item:hover {
+     /* Lógica de animación específica */
+     width: 14rem; /* Equivalente a w-56 */
+  }
+</style>
