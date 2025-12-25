@@ -11,52 +11,85 @@ import PortadaSecretos from "/src/assets/secretos_portada.png"
 
   <!-- ESTANTERÍA -->
   <div
-    class="
-      flex flex-wrap items-end justify-center
-      bg-[#feffda]
-      border-4 border-black
-      shadow-[12px_12px_0px_0px_#000]
-      p-4 pt-16 pb-0 min-h-85
-      relative z-0
-    "
+  class="
+  grid grid-cols-2 gap-0 items-center lg:flex lg:gap-2 justify-center
+  place-items-center
+  bg-[#feffda]
+  border-4 border-black
+  shadow-[12px_12px_0px_0px_#000]
+  p-4 pt-16 pb-0 min-h-85
+  relative z-0
+  "
   >
-    <!-- LIBROS -->
-  <Book 
-  title="Secretos"
-  image ={PortadaSecretos}
-  author="Alejandra Morales"
-  color="#424242"
-  color_title = "#fff"
-  alt="Libro secretos"
-  font ="finger-paint"
-  />
-    <Book 
-  title="El chico de la casa once"
-  image ={PortadaSecretos}
-  author="Alejandra Morales"
-  color="#00b0ff"
-  color_title = "#000"
-  alt="Libro secretos"
-  font ="montserrat"
+  <!-- LIBROS -->
+  <Book
+    title="Secretos"
+    image ={PortadaSecretos}
+    color="#424242"
+    color_title = "#fff"
+    alt="Libro secretos"
+    font ="finger-paint"
+    link_libro="/secretos"
+    label_vermas="Ver Más"  
   />
   <Book 
-  title="Ejemplo libro"
-  image ={PortadaSecretos}
-  author="Alejandra Morales"
-  color="#ff94c8"
-  color_title = "#000"
-  alt="Libro secretos"
-  font ="montserrat"
+    title="El chico de la casa once"
+    image ={PortadaSecretos}
+    color="#00b0ff"
+    color_title = "#000"
+    alt="Libro secretos"
+    font ="montserrat"
   />
-
-
-    <!-- Decoración inferior -->
-    <div class="absolute bottom-0 left-0 w-full h-6 bg-black/5 border-t-2 border-black/10 flex items-center justify-center overflow-hidden pointer-events-none">
-      <div class="w-full h-px bg-black/10"></div>
-    </div>
+  <Book 
+    title="Ejemplo libro"
+    image ={PortadaSecretos}
+    color="#ff94c8  "
+    color_title = "#000"
+    alt="Libro secretos"
+    font ="montserrat"
+  />
+   <Book 
+    title="Ejemplo libro"
+    image ={PortadaSecretos}
+    color="#ff94c8"
+    color_title = "#000"
+    alt="Libro secretos"
+    font ="montserrat"
+  />
+   <Book 
+    title="Ejemplo libro"
+    image ={PortadaSecretos}
+    color="#ff94c8"
+    color_title = "#000"
+    alt="Libro secretos"
+    font ="montserrat"
+  />
+   <Book 
+    title="Ejemplo libro"
+    image ={PortadaSecretos}
+    author="Alejandra Morales"
+    color="#ff94c8"
+    color_title = "#000"
+    alt="Libro secretos"
+    font ="montserrat"
+  />
+   <Book 
+    title="Ejemplo libro"
+    image ={PortadaSecretos}
+    author="Alejandra Morales"
+    color="#ff94c8"
+    color_title = "#000"
+    alt="Libro secretos"
+    font ="montserrat"
+  />
+  
+  <!-- Decoración inferior -->
+  <div class="absolute bottom-0 left-0 w-full h-6 bg-black/5 border-t-2 border-black/10 flex items-center justify-center overflow-hidden pointer-events-none ">
+    <div class="w-full h-px bg-black/10"></div>
   </div>
+</div>
 
-  <!-- Nota al pie -->
+<!-- Nota al pie -->
   <div class="flex justify-center mt-12">
     <p class="noselect text-center font-mono font-bold text-black text-xs md:text-sm bg-yellow-300 inline-block px-4 py-1 border-2 border-black shadow-[2px_2px_0_0_#000] rotate-1">
       * Toca un libro para expandir *

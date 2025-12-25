@@ -221,7 +221,6 @@ a.learn-more:active::before {
   width: 3.5rem;
   height: 280px;
   position: relative;
-  cursor: pointer;
   overflow: hidden;
   border: 2px solid #000;
   margin-right: -2px;
@@ -241,6 +240,7 @@ a.learn-more:active::before {
 /* --- LOMO --- */
 .book-spine {
   position: absolute;
+  cursor: pointer;
   inset: 0;
   display: flex;
   flex-direction: column;
@@ -296,6 +296,7 @@ a.learn-more:active::before {
   inset: 0;
   background: rgba(0,0,0,0);
   transition: background 0.3s ease;
+
 }
 
 .book-item:hover .cover-overlay {
@@ -305,7 +306,7 @@ a.learn-more:active::before {
 /* --- STICKER --- */
 .sticker {
   position: absolute;
-  bottom: 1rem;
+  bottom: .5rem;
   left: 1rem;
   right: 1rem;
   background: #fff;
@@ -323,13 +324,9 @@ a.learn-more:active::before {
   opacity: 1;
 }
 
-.sticker h3 {
+.sticker a {
   font-weight: 800;
   text-transform: uppercase;
   line-height: 1.1;
 }
 
-.sticker p {
-  font-family: monospace;
-  font-size: 0.75rem;
-}
